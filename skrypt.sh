@@ -25,7 +25,6 @@ elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
   done
  fi
 
-<<<<<<< HEAD
 elif [ "$1" = "--help" ] || [ "$1" == "-h" ]; then
 echo "--date lub -d wyswietla date"
 echo "--logs lub -l generuje 100 plików"
@@ -56,3 +55,4 @@ elif [ "$1" = "--error" ] || [ "$1" = "-e" ]; then
  fi
 
 fi
+
