@@ -26,9 +26,11 @@ elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
  fi
 
 elif [ "$1" = "--help" ] || [ "$1" == "-h" ]; then
-echo "--date wyswietla date"
-echo "--logs generuje 100 plików"
-echo "--logs X liczba generuje tyle plikow ile wynosi X"
+echo "--date lub -d wyswietla date"
+echo "--logs lub -l generuje 100 plików"
+echo "--logs X lub -l liczba generuje tyle plikow ile wynosi X"
+echo "--init lub -i klonuje repozytorium i dodaje sciezke PATH"
+echo "--error lub -e to co logs ale error"
 
 elif [ "$1" = "--init" ] || [ "$1" = "-i" ]; then
 git clone https://github.com/Dawid51513/PodstawaGIT
@@ -51,4 +53,6 @@ elif [ "$1" = "--error" ] || [ "$1" = "-e" ]; then
   echo $(data) >>error$i/error$i.txt
   done
  fi
+
 fi
+
