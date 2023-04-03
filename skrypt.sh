@@ -26,7 +26,7 @@ elif [ "$1" = "--logs" ]; then
  fi
 
 elif [ "$1" = "--help" ]; then
-echo "--date wyswietla date"
-echo "--logs generuje 100 plików"
-echo "--logs X liczba generuje tyle plikow ile wynosi X"
+echo "--date lub -d wyswietla date"
+echo "--logs lub -l generuje 100 plików"
+echo "--logs X lub -l liczba generuje tyle plikow ile wynosi X"
 fi
