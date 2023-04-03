@@ -10,18 +10,18 @@ echo $(data)
 elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
  if [ "$2" ]; then
   for (( i=1; i<=$2; i++ )); do
-   touch log$i.txt
-   echo "$i" "log$i.txt"  >>log$i.txt
-   echo "$0" >>log$i.txt
-   echo $(data) >>log$i.txt
+   mkdir log$i
+   echo "$i" "log$i.txt"  >>log$i/log$i.txt
+   echo "$0" >>log$i/log$i.txt
+   echo $(data) >>log$i/log$i.txt
  done
 
  else
   for (( i=1; i<=100; i++ )); do
-  touch log$i.txt
-  echo  "$i" "log$i.txt"  >>log$i.txt
-  echo "$0" >>log$i.txt
-  echo $(data) >>log$i.txt
+  mkdir log$i
+  echo  "$i" "log$i.txt"  >>log$i/log$i.txt
+  echo "$0" >>log$i/log$i.txt
+  echo $(data) >>log$i/log$i.txt
   done
  fi
 
