@@ -25,6 +25,7 @@ elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
   done
  fi
 
+<<<<<<< HEAD
 elif [ "$1" = "--help" ] || [ "$1" == "-h" ]; then
 echo "--date wyswietla date"
 echo "--logs generuje 100 plików"
@@ -51,4 +52,10 @@ elif [ "$1" = "--error" ] || [ "$1" = "-e" ]; then
   echo $(data) >>error$i/error$i.txt
   done
  fi
+=======
+elif [ "$1" = "--help" ]; then
+echo "--date lub -d wyswietla date"
+echo "--logs lub -l generuje 100 plików"
+echo "--logs X lub -l liczba generuje tyle plikow ile wynosi X"
+>>>>>>> 45da01a (dodaje krótsze flagi)
 fi
