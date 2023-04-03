@@ -24,4 +24,9 @@ elif [ "$1" = "--logs" ]; then
   echo $(data) >>log$i.txt
   done
  fi
+
+elif [ "$1" = "--help" ]; then
+echo "--date wyswietla date"
+echo "--logs generuje 100 plików"
+echo "--logs X liczba generuje tyle plikow ile wynosi X"
 fi
