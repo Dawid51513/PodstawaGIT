@@ -4,10 +4,10 @@ function data {
 }
 
 
-if [ "$1" = "--date" ]; then
+if [ "$1" = "--date" ] || [ "$1" = "-d" ]; then
 echo $(data)
 
-elif [ "$1" = "--logs" ]; then
+elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
  if [ "$2" ]; then
   for (( i=1; i<=$2; i++ )); do
    touch log$i.txt
@@ -25,7 +25,7 @@ elif [ "$1" = "--logs" ]; then
   done
  fi
 
-elif [ "$1" = "--help" ]; then
+elif [ "$1" = "--help" ] || [ "$1" == "-h" ]; then
 echo "--date wyswietla date"
 echo "--logs generuje 100 plików"
 echo "--logs X liczba generuje tyle plikow ile wynosi X"
