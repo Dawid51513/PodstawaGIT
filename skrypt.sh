@@ -29,4 +29,9 @@ elif [ "$1" = "--help" ] || [ "$1" == "-h" ]; then
 echo "--date wyswietla date"
 echo "--logs generuje 100 plików"
 echo "--logs X liczba generuje tyle plikow ile wynosi X"
+
+elif [ "$1" = "--init" ] || [ "$1" = "-i" ]; then
+git clone https://github.com/Dawid51513/PodstawaGIT
+export PATH="$PATH:$(dirname "$0")"
+
 fi
