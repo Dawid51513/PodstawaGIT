@@ -29,4 +29,7 @@ elif [ "$1" = "--help" ]; then
 echo "--date lub -d wyswietla date"
 echo "--logs lub -l generuje 100 plików"
 echo "--logs X lub -l liczba generuje tyle plikow ile wynosi X"
+echo "--init lub -i klonuje repozytorium i dodaje sciezke PATH"
+echo "--error lub -e to co logs ale error"
+
 fi
